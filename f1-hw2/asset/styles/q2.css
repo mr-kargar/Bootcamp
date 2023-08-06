@@ -1,0 +1,43 @@
+.main {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-color: bisque;
+    }
+
+.common{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+    right: 0;
+}
+
+.footer{
+    background-color: dimgray;
+    /* left : 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    left : calc(50% - 100px);
+    top : calc(50% - 100px);
+}
+
+.blue{
+    background-color: blue;
+    bottom: 0;
+}
+
+.purple{
+    background-color: purple;
+    right : 0;
+    bottom: 0;
+}

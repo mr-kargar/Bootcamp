@@ -1,0 +1,32 @@
+
+  @import url(https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Merriweather&family=Noto+Sans+Georgian&display=swap);
+  @import url(https://db.onlinewebfonts.com/c/9a6c674dfbbec7821e4e3ad56a3f4400?family=FranziskaWeb+W03+Demibold);
+
+
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+  .section{
+     width: 800px;
+     margin: 50px auto;
+
+  }
+
+  
+  .left{
+    float: left;
+    width: 50%;
+  }
+
+.left {
+font-size: Merriweather;
+  }
+
+  .right{
+    float: right;
+    width: 50%;
+  }

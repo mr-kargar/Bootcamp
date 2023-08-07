@@ -1,3 +1,5 @@
+// تابعی بنویسید که آرایه ای از آبجکت ها مانند زیر را دریافت کند و وضعیت هر آبجکت را در کنسول چاپ کند
+
 function report(array){
     for(let index=0 ; index < array.length ; index++)
     if (array[index].readingStatus) {

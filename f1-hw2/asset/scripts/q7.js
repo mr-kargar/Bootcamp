@@ -1,3 +1,5 @@
+//برنامه ای بنویسید که کلید های یک آبجکت را لیست نماید
+
 function getObjectKeys(object) {
     let keyArray = [];
     for (key in object)

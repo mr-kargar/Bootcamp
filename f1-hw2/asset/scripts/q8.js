@@ -1,3 +1,5 @@
+//برنامه ای بنویسید که مقدار های یک آبجکت را لیست نماید
+
 function getObjectValue (object){
     let valueArray = [];
     for( key in object)

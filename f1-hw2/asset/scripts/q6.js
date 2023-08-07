@@ -1,3 +1,5 @@
+// تابعی بنویسید که یک آرایه ی چند بعدی را در ورودی دریافت و آن را تبدیل به یک آرایه ی تک عدی کند
+
 function flatten(array, flatArray) {
     if (!flatArray) {
         flatArray = [];

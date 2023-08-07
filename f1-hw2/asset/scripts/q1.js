@@ -1,3 +1,5 @@
+// تابعی بنویسید که دنباله ی عدد مثلثی را محاسبه کند.1،3،6،10،15
+
 function triangle(num) {
     let solve;
     for (let i = 1; i <= num; i++) {

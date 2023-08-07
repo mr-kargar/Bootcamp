@@ -1,3 +1,5 @@
+//تابعی بنویسید که نوع تمام المان های یک آرایه را در کنسول چاپ کند
+
 function typeChecker(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (Array.isArray(arr[i])) {

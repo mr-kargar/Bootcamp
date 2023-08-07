@@ -1,3 +1,5 @@
+//تابعی بنویسید که یک آرایه از اعداد را دریافت و آن را معکوس کند
+
 function reverse (array){
     let item , reverseArray = [];
     let length = array.length;

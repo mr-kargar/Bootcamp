@@ -1,32 +1,94 @@
+@import url(https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Merriweather&family=Noto+Sans+Georgian&display=swap);
+@import url(https://db.onlinewebfonts.com/c/2db80501ab27169c9b8395ce6f749be1?family=Cambria+Bold);
+@import url(https://db.onlinewebfonts.com/c/758d40d7ca52e3a9bff2655c7ab5703c?family=Cambria+W02+Regular);
+@import url(https://db.onlinewebfonts.com/c/f3b05e50fcaaf951d607d2c168ac8602?family=FranziskaWeb+W03+Italic);
 
-  @import url(https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Merriweather&family=Noto+Sans+Georgian&display=swap);
-  @import url(https://db.onlinewebfonts.com/c/9a6c674dfbbec7821e4e3ad56a3f4400?family=FranziskaWeb+W03+Demibold);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-
-
-
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
-  .section{
-     width: 800px;
-     margin: 50px auto;
+.section1 {
+    width: 400px;
+    margin: 50px auto;
+}
 
-  }
+.top h1 {
+    font-family: 'Cambria Bold';
+    color: #33638d;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
 
-  
-  .left{
+.top p {
+    font-family: 'Cambria W02 Regular';
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.top strong {
+    color: #33638d;
+    font-weight: 900;
+}
+
+.quote {
     float: left;
-    width: 50%;
-  }
+    font-size: 80px;
+    margin-right: 10px;
+    color: darkgray;
+}
+
+.pQuote {
+    font-family: 'FranziskaWeb W03 Italic';
+}
+
+.section2 {
+    width: 800px;
+    margin: 50px auto;
+}
 
 .left {
-font-size: Merriweather;
-  }
+    float: left;
+    width: 50%;
+    padding: 10px;
+    font-family: 'Garamond';
+    font-size: 1rem;
+    font-weight: 100;
+}
 
-  .right{
+.left h1 {
+    font-family: 'merriweather';
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.left p {
+    margin-top: 20px;
+}
+
+.right {
     float: right;
     width: 50%;
-  }
+    padding: 10px;
+    font-family: 'Lato';
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.right h1 {
+    font-family: 'merriweather';
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.right p {
+    margin-top: 20px;
+}

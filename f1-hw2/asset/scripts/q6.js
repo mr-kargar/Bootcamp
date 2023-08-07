@@ -15,5 +15,5 @@ function flatten(array, flatArray) {
 }
 
 let arr = ["amin", 1, true, [2, 3], { a: 1 }, ['amir', ['good', 123, false]]];
-let flatArray = [];
+let flatArray;
 console.log(flatten(arr, flatArray));

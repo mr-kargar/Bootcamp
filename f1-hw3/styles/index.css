@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --primaryColor: #009688;
+  --secondaryColor: #616161;
+  --primaryBgColor: #f1f1f1;
+  --secondaryBgColor: #ffffff;
+}
+
+body {
+  background-color: var(--primaryBgColor);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  height: 100vh;
+  padding-top: 2rem;
+  background-color: var(--secondaryBgColor);
+}
+
+.avatar-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+  margin-left: 1.2rem;
+}
+
+aside h3,
+p,
+li {
+  padding: 10px 1.2rem;
+}
+
+.portfolio {
+  color: var(--primaryColor);
+}
+
+.portfolio:hover {
+  color: black;
+}
+
+aside a {
+  margin-left: 20px;
+}
+
+aside li:hover {
+  background-color: #cccccc;
+}
+
+aside section {
+  padding: 10px 1.2rem;
+}
+
+aside section i:hover {
+  opacity: 60%;
+}
+
+main {
+  width: 80%;
+  height: 100vh;
+  padding: 0 1.2rem;
+  overflow-y: scroll;
+}
+
+main h1 {
+  padding: 1.2rem 0;
+}
+
+.label {
+  margin-bottom: 1.2rem;
+}
+
+.itemLabel {
+  padding: 10px;
+  margin-block: 50px;
+  background-color: var(--secondaryBgColor);
+}
+
+main hr {
+  border: 3px solid #cccccc;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.card {
+  width: 32.7%;
+  background-color: var(--secondaryBgColor);
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-image:hover {
+  opacity: 60%;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.pageNumber {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.itemPageNumber {
+  padding: 1rem;
+  font-size: large;
+}
+
+.itemPageNumber:hover {
+  color: var(--secondaryBgColor);
+  background-color: black;
+}
+
+.myImageAboutMe {
+  width: 49%;
+  height: 400px;
+}
+
+.aboutMeContainer {
+  margin: 20px 0;
+}
+
+.skillList{
+  margin-bottom: 20px;
+}
+
+.skillList h3 {
+  margin-bottom: 20px;
+}
+
+.skill h4 {
+  padding-block: 1rem;
+}
+
+.photography  {
+  display: flex;
+}
+
+.photography .skillPercent {
+  width: 95%;
+  padding-block: 10px;
+  background-color: var(--secondaryColor);
+  text-align: center;
+  font-size: large;
+  color: var(--secondaryBgColor);
+}
+.photography .percentComplete {
+  width: 5%;
+  padding-block: 10px;
+  background-color: #9e9e9e;
+}
+
+.webDesign {
+  display: flex;
+}
+
+.webDesign .skillPercent {
+  width: 85%;
+  padding-block: 10px;
+  background-color: var(--secondaryColor);
+  text-align: center;
+  font-size: large;
+  color: var(--secondaryBgColor);
+}
+
+.webDesign .percentComplete {
+  width: 15%;
+  padding-block: 10px;
+  background-color: #9e9e9e;
+}
+
+.photoshop {
+  display: flex;
+}
+
+.photoshop .skillPercent {
+  width: 80%;
+  padding-block: 10px;
+  background-color: var(--secondaryColor);
+  text-align: center;
+  font-size: large;
+  color: var(--secondaryBgColor);
+}
+
+.photoshop .percentComplete {
+  width: 20%;
+  padding-block: 10px;
+  background-color: #9e9e9e;
+}
+
+.btnResume {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--secondaryColor);
+  color: var(--secondaryBgColor);
+  font-size: large;
+}
+
+.plans{
+  margin: 20px 0;
+}
+
+.plan{
+display: flex;
+gap: 5px;
+}
+
+.itemPlan{
+  width: 33%;
+  border: 1px solid black;
+}
+
+.itemPlan p{
+  text-align: center;
+  padding: 10px 0;
+  border: 1px solid black;
+}
+
+.itemPlanTitle{
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: var(--secondaryBgColor);
+  font-weight: bold;
+  font-size: large;
+}
+
+

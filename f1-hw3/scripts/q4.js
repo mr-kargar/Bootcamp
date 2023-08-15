@@ -10,6 +10,7 @@ setInterval(() => {
   }
   if (carIndex === road.length - 1) {
     clearInterval();
+    // alert("car is in end of road");
   } else {
     road[carIndex] = "*";
     road[carIndex + 1] = "$$$$";

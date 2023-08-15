@@ -1,3 +1,10 @@
+:root {
+  --primaryColor: #009688;
+  --secondaryColor: #616161;
+  --primaryBgColor: #f1f1f1;
+  --secondaryBgColor: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +13,13 @@
   text-decoration: none;
 }
 
-:root {
-  --primaryColor: #009688;
-  --secondaryColor: #616161;
-  --primaryBgColor: #f1f1f1;
-  --secondaryBgColor: #ffffff;
-}
-
 body {
   background-color: var(--primaryBgColor);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body a {
+  color: black;
 }
 
 .container {
@@ -60,8 +64,10 @@ aside a {
   margin-left: 20px;
 }
 
-aside li:hover {
+aside ul li:hover {
   background-color: #cccccc;
+  cursor: pointer;
+  color: black;
 }
 
 aside section {
@@ -81,16 +87,33 @@ main {
 
 main h1 {
   padding: 1.2rem 0;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
 .label {
-  margin-bottom: 1.2rem;
+  margin-block: 1.2rem;
+}
+
+.itemLabel:hover {
+  background-color: #cccccc;
+  cursor: pointer;
+  color: black;
 }
 
 .itemLabel {
   padding: 10px;
   margin-block: 50px;
   background-color: var(--secondaryBgColor);
+}
+
+.isActive {
+  background-color: black;
+  color: var(--secondaryBgColor);
+}
+
+.itemLabel i {
+  margin-right: 10px;
 }
 
 main hr {
@@ -122,18 +145,24 @@ main hr {
 }
 
 .pageNumber {
-  text-align: center;
   margin: 50px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .itemPageNumber {
   padding: 1rem;
-  font-size: large;
+  font-size: 0.8rem;
 }
 
 .itemPageNumber:hover {
   color: var(--secondaryBgColor);
   background-color: black;
+  cursor: pointer;
+}
+
+.aboutMe{
+  margin-block: 50px;
 }
 
 .myImageAboutMe {
@@ -145,7 +174,12 @@ main hr {
   margin: 20px 0;
 }
 
-.skillList{
+.aboutMeContainer p{
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.skillList {
   margin-bottom: 20px;
 }
 
@@ -157,13 +191,13 @@ main hr {
   padding-block: 1rem;
 }
 
-.photography  {
+.photography {
   display: flex;
 }
 
 .photography .skillPercent {
   width: 95%;
-  padding-block: 10px;
+  padding-block: 8px;
   background-color: var(--secondaryColor);
   text-align: center;
   font-size: large;
@@ -171,7 +205,6 @@ main hr {
 }
 .photography .percentComplete {
   width: 5%;
-  padding-block: 10px;
   background-color: #9e9e9e;
 }
 
@@ -181,7 +214,7 @@ main hr {
 
 .webDesign .skillPercent {
   width: 85%;
-  padding-block: 10px;
+  padding-block: 8px;
   background-color: var(--secondaryColor);
   text-align: center;
   font-size: large;
@@ -190,7 +223,6 @@ main hr {
 
 .webDesign .percentComplete {
   width: 15%;
-  padding-block: 10px;
   background-color: #9e9e9e;
 }
 
@@ -200,7 +232,7 @@ main hr {
 
 .photoshop .skillPercent {
   width: 80%;
-  padding-block: 10px;
+  padding-block: 8px;
   background-color: var(--secondaryColor);
   text-align: center;
   font-size: large;
@@ -209,41 +241,55 @@ main hr {
 
 .photoshop .percentComplete {
   width: 20%;
-  padding-block: 10px;
   background-color: #9e9e9e;
 }
 
 .btnResume {
-  padding: 10px;
-  margin: 10px 0;
+  padding: 15px;
+  margin: 40px 0;
   background-color: var(--secondaryColor);
   color: var(--secondaryBgColor);
   font-size: large;
+  border: none;
 }
 
-.plans{
+.btnResume i{
+  margin-right: 20px;
+}
+
+.btnResume:hover{
+  color: black;
+  background-color: #cccccc;
+  cursor: pointer;
+
+}
+
+.plans {
   margin: 20px 0;
 }
 
-.plan{
-display: flex;
-gap: 5px;
+.plan {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
 }
 
-.itemPlan{
+.itemPlan {
   width: 33%;
-  border: 1px solid black;
+  border: 1px solid #cccccc;
+  text-align: center;
 }
 
-.itemPlan p{
-  text-align: center;
-  padding: 10px 0;
-  border: 1px solid black;
-}
-
-.itemPlanTitle{
-  text-align: center;
+.itemPlan p {
   padding: 20px 0;
+  border: 1px solid #cccccc;
+  background-color: var(--secondaryBgColor);
+  color: #cccccc;
+}
+
+.itemPlanTitle {
+  text-align: center;
+  padding: 40px 0;
   width: 100%;
   background-color: var(--secondaryColor);
   color: var(--secondaryBgColor);
@@ -251,4 +297,127 @@ gap: 5px;
   font-size: large;
 }
 
+.price {
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid #cccccc;
+  background-color: var(--secondaryBgColor);
+}
 
+.price h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px;
+}
+
+.itemColor {
+  background-color: var(--primaryColor);
+}
+
+.itemColordark{
+  background-color: var(--secondaryColor);
+}
+
+.btnPlan {
+  padding: 15px;
+  font-size: large;
+  margin: 20px auto;
+  color: var(--secondaryBgColor);
+  background-color: var(--primaryColor);
+  border: none;
+}
+
+.contactMe {
+  background-color: #9e9e9e;
+  padding: 10px 0;
+}
+
+.contactMeHeader {
+  display: flex;
+
+}
+
+.contactMe h4{
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.itemcontactMeHeader {
+  width: 33%;
+  text-align: center;
+  padding: 10px 0;
+  color: var(--secondaryBgColor);
+}
+
+.contactMe form input {
+  width: 100%;
+  padding: 5px 0;
+  margin: 5px 5px 5px 0;
+  font-size: 1.5rem;
+}
+
+.btnForm {
+  border: none;
+  font-size: 1rem;
+  padding: 15px;
+  color: var(--secondaryBgColor);
+  background-color: black;
+  margin: 10px 0;
+}
+
+.btnForm:hover{
+  color: black;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+.btnForm i {
+  margin: 0 20px 0 0;
+}
+
+.mainFooter {
+  background-color: var(--secondaryColor);
+  color: var(--secondaryBgColor);
+  display: flex;
+  padding: 50px 0;
+  gap: 20px;
+}
+
+.mainFooter hr{
+  margin: 10px 0;
+}
+
+.subFooter {
+  width: 33%;
+}
+
+.footerImage {
+  width: 60px;
+  height: 60px;
+}
+
+.blogFooter {
+  display: flex;
+}
+
+.tagFooter {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  color: black;
+  margin-top: 20px;
+}
+
+.tagFooter span {
+  background-color: var(--primaryBgColor);
+  padding: 3px 5px;
+  font-size: 0.8rem;
+}
+
+.copyWrite{
+  background-color: black;
+  text-align: center;
+  color: var(--secondaryBgColor);
+  padding: 20px 0;
+}

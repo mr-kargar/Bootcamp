@@ -1,0 +1,11 @@
+$primaryColor : #000000;
+$secondaryColor : #ffffff;
+
+.bg-color-light{
+    background-color: $secondaryColor;
+}
+
+.text-color-dark{
+    color: $primaryColor;
+}
+

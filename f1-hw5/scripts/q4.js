@@ -8,11 +8,10 @@ function weatherCondition(city) {
   xHttp.onload = () => {
     weatherCity = JSON.parse(xHttp.response);
     alert(
-      `city name : ${weatherCity.location.name} --- condition : ${weatherCity.current.condition.text}`
+      `city name : ${weatherCity.location.name} --- condition : ${weatherCity.current.condition.text} --- temp : ${weatherCity.current.temp_c} deg`
     );
   };
 }
 
 let city = prompt("please enter the name of a city : ");
 weatherCondition(city);
-

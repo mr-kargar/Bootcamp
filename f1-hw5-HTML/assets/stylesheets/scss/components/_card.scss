@@ -1,0 +1,15 @@
+.card {
+    width: 32.7%;
+    background-color: $lightColor;
+
+    &-image{
+        width: 100%;
+        &:hover{
+            opacity: 60%;
+        }
+    }
+
+    &-title{
+        font-weight: bold;
+    }
+  }

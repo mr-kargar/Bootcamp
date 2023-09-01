@@ -1,0 +1,21 @@
+.aboutMe {
+  margin-block: 50px;
+
+  &-img {
+    width: 49%;
+    height: 400px;
+  }
+
+  &-container {
+    margin: 20px 0;
+
+    p {
+      margin: 1.5rem 0;
+      padding: 0;
+    }
+  }
+
+  &-skillList{
+    margin-bottom: 20px;
+  }
+}

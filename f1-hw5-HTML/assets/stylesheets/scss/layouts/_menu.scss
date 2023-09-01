@@ -1,0 +1,14 @@
+.menu {
+  width: 20%;
+  height: 100vh;
+  padding-top: 2rem;
+  background-color: $lightColor;
+
+  &-avatar-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    margin-left: 1.2rem;
+  }
+}

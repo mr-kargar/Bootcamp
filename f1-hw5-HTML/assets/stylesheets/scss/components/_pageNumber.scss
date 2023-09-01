@@ -1,0 +1,19 @@
+.pageNumber {
+  margin: 50px 0;
+  display: flex;
+
+  &-item {
+    padding: 1rem;
+    font-size: 0.8rem;
+
+    &:hover {
+      color: $lightColor;
+      background-color: $darkColor;
+      cursor: pointer;
+    }
+
+    &.isActive{
+        @include isActive;
+    }
+  }
+}

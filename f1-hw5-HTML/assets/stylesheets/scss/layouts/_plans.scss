@@ -1,0 +1,45 @@
+.plans {
+  margin: 20px 0;
+
+  .plan {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+
+    &-itemPlan {
+      width: 33%;
+      border: 1px solid $tertiaryColor;
+      text-align: center;
+
+      p {
+        padding: 20px 0;
+        border: 1px solid $tertiaryColor;
+        background-color: $lightColor;
+        color: $tertiaryColor;
+      }
+
+      .itemPlanTitle{
+        text-align: center;
+        padding: 40px 0;
+        width: 100%;
+        background-color: $secondaryColor;
+        color: $lightColor;
+        font-weight: bold;
+        font-size: large;
+      }
+
+      .price {
+        text-align: center;
+        padding: 20px 0;
+        border: 1px solid $tertiaryColor;
+        background-color: $lightColor;
+
+        h5 {
+          font-size: 1.5rem;
+          font-weight: 400;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

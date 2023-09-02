@@ -1,0 +1,28 @@
+.contactMe {
+  background-color: $secondaryBgColor;
+  padding: 10px 0;
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 20px 0;
+  }
+
+  &-header {
+    @include displayFlex;
+
+    &-item {
+      width: 33%;
+      text-align: center;
+      padding: 10px 0;
+      color: $lightColor;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 5px 5px 0;
+    font-size: 1.5rem;
+  }
+}

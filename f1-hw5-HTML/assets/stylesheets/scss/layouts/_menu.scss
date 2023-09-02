@@ -4,11 +4,48 @@
   padding-top: 2rem;
   background-color: $lightColor;
 
-  &-avatar-image{
+  &-avatar-image {
     width: 150px;
     height: 150px;
     border-radius: 3px;
     margin-bottom: 2rem;
     margin-left: 1.2rem;
+  }
+
+  h3,
+  p,
+  li {
+    padding: 10px 1.2rem;
+  }
+
+  a {
+    margin-left: 20px;
+  }
+
+  &-portfolio {
+    color: $primaryColor;
+    &:hover {
+      color: $darkColor;
+    }
+  }
+
+  ul {
+    li {
+      &:hover {
+        background-color: $tertiaryColor;
+        cursor: pointer;
+        color: $darkColor;
+      }
+    }
+  }
+
+  section {
+    padding: 10px 1.2rem;
+
+    i {
+      &:hover {
+        opacity: 60%;
+      }
+    }
   }
 }

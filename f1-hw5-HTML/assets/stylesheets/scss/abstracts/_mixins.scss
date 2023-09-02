@@ -2,3 +2,21 @@
     background-color: $darkColor;
     color: $lightColor;
 }
+
+@mixin displayFlex{
+    display: flex;
+}
+
+@mixin percentComplete($percent){
+    width: $percent;
+    padding-block: 8px;
+    background-color: $secondaryColor;
+    text-align: center;
+    font-size: large;
+    color: $lightColor;
+}
+
+@mixin percentLeftOver($leftOver){
+    width: $leftOver;
+  background-color: $secondaryBgColor;
+}

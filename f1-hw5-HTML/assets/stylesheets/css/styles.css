@@ -262,6 +262,7 @@ body {
   text-align: center;
 }
 .plans .plan-itemPlan p {
+  margin: 0;
   padding: 20px 0;
   border: 1px solid #cccccc;
   background-color: #ffffff;
@@ -269,7 +270,8 @@ body {
 }
 .plans .plan-itemPlan .itemPlanTitle {
   text-align: center;
-  padding: 40px 0;
+  margin: 0;
+  padding: 50px 0;
   width: 100%;
   background-color: #616161;
   color: #ffffff;

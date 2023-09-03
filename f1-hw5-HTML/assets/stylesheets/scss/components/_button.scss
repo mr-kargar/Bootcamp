@@ -2,11 +2,15 @@
   &-lg {
     padding: 15px;
     margin: 40px 0;
-    background-color: $secondaryBgColor;
+    background-color: $secondaryColor;
     color: $lightColor;
     font-size: large;
     border: none;
     cursor: pointer;
+
+    i{
+      margin-right: 20px;
+    }
 
     &:hover {
       color: $darkColor;

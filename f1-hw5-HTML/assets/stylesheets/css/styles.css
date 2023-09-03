@@ -19,11 +19,14 @@ ul {
 .btn-lg {
   padding: 15px;
   margin: 40px 0;
-  background-color: #9E9E9E;
+  background-color: #616161;
   color: #ffffff;
   font-size: large;
   border: none;
   cursor: pointer;
+}
+.btn-lg i {
+  margin-right: 20px;
 }
 .btn-lg:hover {
   color: #000000;
@@ -39,12 +42,12 @@ ul {
 }
 
 .container {
-  width: 80%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .card {
-  width: 32.7%;
+  width: 33.3333%;
   background-color: #ffffff;
 }
 .card-image {
@@ -55,6 +58,10 @@ ul {
 }
 .card-title {
   font-weight: bold;
+  padding: 0 1rem;
+}
+.card-article {
+  padding: 0 1rem;
 }
 
 .pageNumber {
@@ -82,10 +89,12 @@ body {
 
 .main {
   display: flex;
+  margin-left: 300px;
 }
 
 .menu {
-  width: 20%;
+  position: fixed;
+  width: 300px;
   height: 100vh;
   padding-top: 2rem;
   background-color: #ffffff;
@@ -124,12 +133,12 @@ body {
 }
 
 .content {
-  width: 80%;
+  width: 100%;
   height: 100vh;
 }
 
 .portfolio {
-  padding: 0 1.2rem;
+  padding-left: 1.2rem;
 }
 .portfolio h1 {
   padding: 1.2rem 0;
@@ -144,6 +153,9 @@ body {
   margin-block: 50px;
   background-color: #ffffff;
 }
+.portfolio-label-itemLabel i {
+  margin: 0 10px 0 0;
+}
 .portfolio-label-itemLabel.isActive {
   background-color: #000000;
   color: #ffffff;
@@ -151,11 +163,13 @@ body {
 .portfolio-label-itemLabel:hover {
   background-color: #cccccc;
   cursor: pointer;
-  color: black;
+  color: #000000;
+}
+.portfolio hr {
+  border: 3px solid #cccccc;
 }
 .portfolio-gallery {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
   margin-top: 15px;
   justify-content: center;
@@ -163,6 +177,7 @@ body {
 
 .aboutMe {
   margin-block: 50px;
+  padding-left: 1.2rem;
 }
 .aboutMe-img {
   width: 49%;
@@ -234,6 +249,7 @@ body {
 
 .plans {
   margin: 20px 0;
+  padding-left: 1.2rem;
 }
 .plans .plan {
   display: flex;
@@ -274,7 +290,7 @@ body {
 
 .contactMe {
   background-color: #9E9E9E;
-  padding: 10px 0;
+  padding: 0 1.2rem;
 }
 .contactMe h4 {
   font-size: 1.5rem;
@@ -285,10 +301,20 @@ body {
   display: flex;
 }
 .contactMe-header-item {
-  width: 33%;
+  width: 33.3333%;
   text-align: center;
   padding: 10px 0;
   color: #ffffff;
+}
+.contactMe-header .item-color-dark {
+  background-color: #616161;
+}
+.contactMe-header .item-color-primary {
+  background-color: #009688;
+}
+.contactMe label {
+  display: inline-block;
+  margin-top: 10px;
 }
 .contactMe input {
   width: 100%;
@@ -296,35 +322,48 @@ body {
   margin: 5px 5px 5px 0;
   font-size: 1.5rem;
 }
+.contactMe .btn-lg {
+  background-color: #000000;
+}
+.contactMe .btn-lg:hover {
+  color: #000000;
+  background-color: #cccccc;
+}
 
-.footer {
+.main-footer .footer {
   background-color: #616161;
   color: #ffffff;
   display: flex;
-  padding: 50px 0;
+  padding: 50px 1.2rem;
   gap: 20px;
 }
-.footer .subfooter {
-  width: 33%;
+.main-footer .footer .subfooter {
+  width: 33.3333%;
 }
-.footer .subfooter .footerImage {
+.main-footer .footer .subfooter .blogfooter {
+  display: flex;
+}
+.main-footer .footer .subfooter .blogfooter .footerImage {
   width: 60px;
   height: 60px;
 }
-.footer .subfooter .blogfooter {
-  display: flex;
-}
-.footer .subfooter .tagfooter {
+.main-footer .footer .subfooter .tagfooter {
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
   color: #000000;
   margin-top: 20px;
 }
-.footer .subfooter .tagfooter span {
-  background-color: #f1f1f1;
+.main-footer .footer .subfooter .tagfooter span {
+  background-color: #9E9E9E;
   padding: 3px 5px;
   font-size: 0.8rem;
+}
+.main-footer .copyWrite {
+  background-color: black;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
 }
 
 /*!

@@ -1,6 +1,6 @@
 .contactMe {
   background-color: $secondaryBgColor;
-  padding: 10px 0;
+  padding: 0 1.2rem;
 
   h4 {
     font-size: 1.5rem;
@@ -12,17 +12,38 @@
     @include displayFlex;
 
     &-item {
-      width: 33%;
+      width: 33.3333%;
       text-align: center;
       padding: 10px 0;
       color: $lightColor;
     }
-  }
 
+    .item-color-dark{
+      background-color: $secondaryColor;
+    }
+
+    .item-color-primary{
+      background-color: $primaryColor;
+    }
+
+  }
+label{
+  display: inline-block;
+  margin-top: 10px;
+}
   input {
     width: 100%;
     padding: 5px 0;
     margin: 5px 5px 5px 0;
     font-size: 1.5rem;
+  }
+
+  .btn-lg {
+    background-color: $darkColor;
+
+    &:hover {
+      color: $darkColor;
+      background-color: $tertiaryColor;
+    }
   }
 }

@@ -1,34 +1,43 @@
-.footer {
-  background-color: $secondaryColor;
-  color: $lightColor;
-  display: flex;
-  padding: 50px 0;
-  gap: 20px;
+.main-footer {
+  .footer {
+    background-color: $secondaryColor;
+    color: $lightColor;
+    display: flex;
+    padding: 50px 1.2rem;
+    gap: 20px;
 
-  .subfooter {
-    width: 33%;
+    .subfooter {
+      width: 33.3333%;
 
-    .footerImage {
-        width: 60px;
-        height: 60px;
+      .blogfooter {
+        @include displayFlex;
+
+        .footerImage {
+          width: 60px;
+          height: 60px;
+        }
       }
+      
+      .tagfooter {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        color: $darkColor;
+        margin-top: 20px;
 
-    .blogfooter {
-      @include displayFlex;
-    }
-
-    .tagfooter {
-      display: flex;
-      gap: 5px;
-      flex-wrap: wrap;
-      color: $darkColor;
-      margin-top: 20px;
-
-      span {
-        background-color: $primaryBgColor;
-        padding: 3px 5px;
-        font-size: 0.8rem;
+        span {
+          background-color: $secondaryBgColor;
+          padding: 3px 5px;
+          font-size: 0.8rem;
+        }
       }
     }
+  }
+
+  .copyWrite {
+    background-color: black;
+    text-align: center;
+    color: $lightColor;
+    padding: 20px 0;
   }
 }

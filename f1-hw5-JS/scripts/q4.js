@@ -6,7 +6,7 @@ function weatherCondition(city) {
   );
   xHttp.send();
   xHttp.onload = () => {
-    weatherCity = JSON.parse(xHttp.response);
+    let weatherCity = JSON.parse(xHttp.response);
     alert(
       `city name : ${weatherCity.location.name} --- condition : ${weatherCity.current.condition.text} --- temp : ${weatherCity.current.temp_c} deg`
     );

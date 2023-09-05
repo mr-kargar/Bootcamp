@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+label {
+  font-size: large;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#color {
+  padding: 10px;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#color option {
+  font-size: large;
+  font-weight: 600;
+  
+}

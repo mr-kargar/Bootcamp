@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+table {
+  margin: 10px 0;
+  background-color: antiquewhite;
+}
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+img {
+  width: 100px;
+}
+
+th {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}

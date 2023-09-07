@@ -1,26 +1,42 @@
 .portfolio {
   padding-left: 1.2rem;
 
+  @media screen and (max-width: 1000px) {
+    h1{
+    margin: 5px 0;
+    }
+  }
+
   h1 {
     padding: 1.2rem 0;
     font-size: 2.5rem;
     font-weight: 500;
+
+  
   }
 
   &-label {
     margin-block: 1.2rem;
+
+    @media screen and (max-width: 600px) {
+      .photo-label , .art-label{
+      display: none;
+      }
+    }
 
     &-itemLabel {
       padding: 10px;
       margin-block: 50px;
       background-color: $lightColor;
 
-      i{
+     
+
+      i {
         margin: 0 10px 0 0;
       }
 
       &.isActive {
-       @include isActive;
+        @include isActive;
       }
 
       &:hover {
@@ -31,7 +47,7 @@
     }
   }
 
-  hr{
+  hr {
     border: 3px solid $tertiaryColor;
   }
 
@@ -41,5 +57,4 @@
     margin-top: 15px;
     justify-content: center;
   }
-
 }

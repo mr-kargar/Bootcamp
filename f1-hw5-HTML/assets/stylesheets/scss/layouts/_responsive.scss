@@ -1,0 +1,49 @@
+.responsive {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px 0 20px;
+
+    @media screen and (min-width: 1001px) {
+      display: none;
+    }
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .checkbox:checked ~ .menu {
+    left: 0;
+  }
+  .checkbox:checked ~ .responsive-header .hamburger-menu {
+    margin-left: 300px;
+    transform: rotateZ(90deg);
+   }
+
+   .checkbox:checked ~ .responsive-header .hamburger-menu .item-2{
+    opacity: 0;
+   }
+
+   .checkbox:checked ~ .responsive-header .hamburger-menu .item-1{
+    transform: rotateZ(45deg);
+   }
+
+   .checkbox:checked ~ .responsive-header .hamburger-menu .item-3{
+    transform: rotateZ(-45deg);
+   }
+
+   .highlight{
+    width: 100vw;
+    height: max-content;
+    position: absolute;
+    background-color: $darkColor;
+    opacity: 50%;
+    
+    
+   }
+}

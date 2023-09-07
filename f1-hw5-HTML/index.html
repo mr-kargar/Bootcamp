@@ -10,37 +10,54 @@
 
 <body>
 
-
-
     <div class="container">
-        <!-- start menu section-->
-        <aside class="menu">
-            <img class="menu-avatar-image" src="./assets/images/avatar_g2.jpg" alt="avatar image" />
-            <h3>PORTFOLIO</h3>
-            <p>Template by Amin Kargar</p>
-            <ul>
-                <li class="menu-portfolio">
-                    <i class="fa-solid fa-grip fa-lg"></i><a class="menu-portfolio" href="#">PORTFOLIO</a>
-                </li>
-                <li><i class="fa-solid fa-user fa-lg"></i><a href="#">ABOUT</a></li>
-                <li>
-                    <i class="fa-solid fa-envelope fa-lg"></i><a href="#">CONTACT</a>
-                </li>
-            </ul>
-            <section>
-                <i class="fa-brands fa-square-facebook fa-lg"></i>
-                <i class="fa-brands fa-instagram fa-lg"></i>
-                <i class="fa-brands fa-square-snapchat fa-lg"></i>
-                <i class="fa-brands fa-pinterest-p fa-lg"></i>
-                <i class="fa-brands fa-twitter fa-lg"></i>
-                <i class="fa-brands fa-linkedin fa-lg"></i>
-            </section>
-        </aside>
-        <!-- end menu section-->
 
+        <!-- start responsive menu-->
+        <div class="responsive">
+            <input hidden type="checkbox" name="checkbox" id="check" class="checkbox">
+            <div class="responsive-header">
+                <label for="check" class="hamburger-menu">
+                    <span class="hamburger-menu-item item-1"></span>
+                    <span class="hamburger-menu-item item-2"></span>
+                    <span class="hamburger-menu-item item-3"></span>
+                </label>
+                <img src="./assets/images/avatar_g.jpg" alt="">
+            </div>
+
+            <!-- start menu section-->
+            <aside id="menu" class="menu">
+                <img class="menu-avatar-image" src="./assets/images/avatar_g2.jpg" alt="avatar image" />
+                <h3>PORTFOLIO</h3>
+                <p>Template by Amin Kargar</p>
+                <ul>
+                    <li class="menu-portfolio">
+                        <i class="fa-solid fa-grip fa-lg"></i><a class="menu-portfolio" href="#">PORTFOLIO</a>
+                    </li>
+                    <li><i class="fa-solid fa-user fa-lg"></i><a href="#">ABOUT</a></li>
+                    <li>
+                        <i class="fa-solid fa-envelope fa-lg"></i><a href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <section>
+                    <i class="fa-brands fa-square-facebook fa-lg"></i>
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                    <i class="fa-brands fa-square-snapchat fa-lg"></i>
+                    <i class="fa-brands fa-pinterest-p fa-lg"></i>
+                    <i class="fa-brands fa-twitter fa-lg"></i>
+                    <i class="fa-brands fa-linkedin fa-lg"></i>
+                </section>
+            </aside>
+            <!-- end menu section-->
+
+        </div>
+        <!-- end responsive menu-->
+        
         <!-- start main section-->
         <div class="main">
+
             <main class="content">
+
+
 
                 <!-- start portfolio section-->
                 <section class="portfolio">
@@ -166,8 +183,8 @@
                 <section class="plans">
                     <h3>How much I charge</h3>
                     <div class="plan">
-                        <div class="plan-itemPlan itemPlanBasic">
-                            <h5 class="itemPlanTitle ">Basic</h5>
+                        <div class="plan-item">
+                            <h5 class="plan-item-title ">Basic</h5>
                             <p>Web Design</p>
                             <p>Photography</p>
                             <p>1GB Storage</p>
@@ -178,8 +195,8 @@
                             </div>
                             <button class="btn-md">Sign Up</button>
                         </div>
-                        <div class="plan-itemPlan">
-                            <h5 class="itemPlanTitle itemColor">Pro</h5>
+                        <div class="plan-item">
+                            <h5 class="plan-item-title primary">Pro</h5>
                             <p>Web Design</p>
                             <p>Photography</p>
                             <p>1GB Storage</p>
@@ -190,8 +207,8 @@
                             </div>
                             <button class="btn-md">Sign Up</button>
                         </div>
-                        <div class="plan-itemPlan">
-                            <h5 class="itemPlanTitle">Permium</h5>
+                        <div class="plan-item">
+                            <h5 class="plan-item-title">Permium</h5>
                             <p>Web Design</p>
                             <p>Photography</p>
                             <p>1GB Storage</p>

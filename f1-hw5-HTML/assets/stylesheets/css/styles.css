@@ -82,6 +82,21 @@ ul {
   color: #ffffff;
 }
 
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.hamburger-menu span {
+  width: 40px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  transform-origin: left;
+  transition: all 1s 0.5s;
+}
+
 body {
   background-color: #f1f1f1;
   font-family: Arial, Helvetica, sans-serif;
@@ -91,6 +106,11 @@ body {
   display: flex;
   margin-left: 300px;
 }
+@media screen and (max-width: 1000px) {
+  .main {
+    margin-left: 0;
+  }
+}
 
 .menu {
   position: fixed;
@@ -98,6 +118,12 @@ body {
   height: 100vh;
   padding-top: 2rem;
   background-color: #ffffff;
+}
+@media screen and (max-width: 1000px) {
+  .menu {
+    left: -300px;
+    top: 0;
+  }
 }
 .menu-avatar-image {
   width: 150px;
@@ -255,39 +281,71 @@ body {
   display: flex;
   gap: 5px;
   margin-top: 20px;
+  background-color: #f9f9f9;
+  color: gray;
 }
-.plans .plan-itemPlan {
+.plans .plan-item {
   width: 33%;
   border: 1px solid #cccccc;
   text-align: center;
 }
-.plans .plan-itemPlan p {
+.plans .plan-item p {
   margin: 0;
   padding: 20px 0;
   border: 1px solid #cccccc;
-  background-color: #ffffff;
-  color: #cccccc;
 }
-.plans .plan-itemPlan .itemPlanTitle {
+.plans .plan-item-title {
   text-align: center;
   margin: 0;
   padding: 50px 0;
   width: 100%;
   background-color: #616161;
   color: #ffffff;
-  font-weight: bold;
-  font-size: large;
+  font-weight: 100;
+  font-size: 1.5rem;
 }
-.plans .plan-itemPlan .price {
-  text-align: center;
-  padding: 20px 0;
+.plans .plan-item .primary {
+  background-color: #00b5a4;
+}
+.plans .plan-item .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
   border: 1px solid #cccccc;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
+  color: gray;
+  padding: 30px 0;
 }
-.plans .plan-itemPlan .price h5 {
+.plans .plan-item .price h5 {
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 10px;
+  margin: 0;
+}
+.plans .plan-item .btn-md {
+  background-color: #00b5a4;
+}
+.plans .plan-item:hover {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+.plans .plan-item:hover p {
+  border: 1px solid #000000;
+  color: #000000;
+}
+.plans .plan-item:hover .price {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+.plans .plan-item:hover .plan-item-title {
+  background-color: #000000;
+}
+.plans .plan-item:hover .btn-md {
+  background-color: #009688;
+}
+.plans .plan-item:hover .primary {
+  background-color: #009688;
 }
 
 .contactMe {
@@ -366,6 +424,47 @@ body {
   text-align: center;
   color: #ffffff;
   padding: 20px 0;
+}
+
+.responsive-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px 0 20px;
+}
+@media screen and (min-width: 1001px) {
+  .responsive-header {
+    display: none;
+  }
+}
+.responsive img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.responsive .checkbox:checked ~ .menu {
+  left: 0;
+}
+.responsive .checkbox:checked ~ .responsive-header .hamburger-menu {
+  margin-left: 300px;
+  transform: rotateZ(90deg);
+}
+.responsive .checkbox:checked ~ .responsive-header .hamburger-menu .item-2 {
+  opacity: 0;
+}
+.responsive .checkbox:checked ~ .responsive-header .hamburger-menu .item-1 {
+  transform: rotateZ(45deg);
+}
+.responsive .checkbox:checked ~ .responsive-header .hamburger-menu .item-3 {
+  transform: rotateZ(-45deg);
+}
+.responsive .highlight {
+  width: 100vw;
+  height: max-content;
+  position: absolute;
+  background-color: #000000;
+  opacity: 50%;
 }
 
 /*!

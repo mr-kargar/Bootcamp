@@ -4,6 +4,12 @@
   height: 100vh;
   padding-top: 2rem;
   background-color: $lightColor;
+  
+
+  @media screen and (max-width : 1000px) {
+    left: -300px;
+    top: 0;
+  }
 
   &-avatar-image {
     width: 150px;
@@ -49,4 +55,6 @@
       }
     }
   }
+
+ 
 }

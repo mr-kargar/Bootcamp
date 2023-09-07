@@ -11,11 +11,21 @@
   &-header {
     @include displayFlex;
 
+    @media screen and (max-width : 600px) {
+      flex-wrap: wrap;
+    }
+
     &-item {
       width: 33.3333%;
       text-align: center;
       padding: 10px 0;
       color: $lightColor;
+
+      @media screen and (max-width : 600px) {
+        width: 100%;
+        
+      }
+
     }
 
     .item-color-dark{

@@ -50,6 +50,11 @@ ul {
   width: 33.3333%;
   background-color: #ffffff;
 }
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
 .card-image {
   width: 100%;
 }
@@ -209,6 +214,11 @@ body {
   width: 49%;
   height: 400px;
 }
+@media screen and (max-width: 600px) {
+  .aboutMe-img {
+    width: 100%;
+  }
+}
 .aboutMe-container {
   margin: 20px 0;
 }
@@ -284,10 +294,20 @@ body {
   background-color: #f9f9f9;
   color: gray;
 }
+@media screen and (max-width: 600px) {
+  .plans .plan {
+    flex-wrap: wrap;
+  }
+}
 .plans .plan-item {
-  width: 33%;
+  width: 33.3333%;
   border: 1px solid #cccccc;
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .plans .plan-item {
+    width: 100%;
+  }
 }
 .plans .plan-item p {
   margin: 0;
@@ -360,11 +380,21 @@ body {
 .contactMe-header {
   display: flex;
 }
+@media screen and (max-width: 600px) {
+  .contactMe-header {
+    flex-wrap: wrap;
+  }
+}
 .contactMe-header-item {
   width: 33.3333%;
   text-align: center;
   padding: 10px 0;
   color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .contactMe-header-item {
+    width: 100%;
+  }
 }
 .contactMe-header .item-color-dark {
   background-color: #616161;
@@ -397,8 +427,18 @@ body {
   padding: 50px 1.2rem;
   gap: 20px;
 }
+@media screen and (max-width: 600px) {
+  .main-footer .footer {
+    flex-wrap: wrap;
+  }
+}
 .main-footer .footer .subfooter {
   width: 33.3333%;
+}
+@media screen and (max-width: 600px) {
+  .main-footer .footer .subfooter {
+    width: 100%;
+  }
 }
 .main-footer .footer .subfooter .blogfooter {
   display: flex;

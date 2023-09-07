@@ -9,10 +9,19 @@
     background-color: lighten($primaryBgColor, 3%);
     color: lighten($darkColor, 50%);
 
+    @media screen and (max-width : 600px) {
+      flex-wrap: wrap;
+    }
+
     &-item {
-      width: 33%;
+      width: 33.3333%;
       border: 1px solid $tertiaryColor;
       text-align: center;
+
+      @media screen and (max-width : 600px) {
+        width: 100%;
+        
+      }
 
       p {
         margin: 0;
@@ -85,6 +94,8 @@
       &:hover .primary{
         background-color: $primaryColor;
       }
+
+   
     }
   }
 }
